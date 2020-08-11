@@ -38,7 +38,7 @@ The language file is a simple .ini file. The <b>Load()</b> method of the <b>Loca
 when you set Tag="SectionName. PropertyName" the engine retrievies the property "PropertyName" in the section "SectionName" of its current language.
 Once loaded the dictionary, the <b>Localizer</b>'s <b>Translate()</b> method translates the GUI by a recursive traversal of the whole WPF LogicalTree, starting from the element you provide as the root (usually the main window or control). For convenience, I  use a static class as a "proxy" for the Localizer, so that i can recall it from whatever point in the code.
 
-<b>TGD ContextManager (TGD.Frameworl.ContextManager)</b>
+<b>TGD ContextManager (TGD.Framework.ContextManager)</b>
 
 This class is simple and sophisticated at the same time. It provides a convenient way to implement your viewModel because both the [RuntimeProperties] and the [ConfigProperties] are "Observables". The class allow the use of multiple configuration files as well. [ConfigProperties] are automatically loaded and saved. You can use only simple C# types but this is not a big limitation. The [RuntimeProperties] are the volatile ones, there is no limitation in the type, they can be also Collection.
 Together with the ObservableCollection class provided by the TGD.Framework package these classes are a good starting point to develop WPF based applications.
