@@ -1,7 +1,7 @@
 # RbrPro-Addons
 Want to develop an addon for the RBRPro manager? Welcome to the right place!
 
-Since version 0.3.0.0 the RBRPro Manager supports Add-Ons. An NGP6 Telemetry server has been implemented. An add-on can act as a Telemetry client and receive telemetry data from the manager.
+Since version <b>0.3.0.0</b> the RBRPro Manager supports Add-Ons. An NGP6 Telemetry server has been implemented. An add-on can act as a Telemetry client and receive telemetry data from the manager.
 
 In other words the RBRProManager behaves in a way which is very similar to SimHub. It receives the NGP telemetry via UDP and can provide the data to its add-ons.
 An add-on in basically a WPF Control hosted in the Add-Ons tab of the manager.
