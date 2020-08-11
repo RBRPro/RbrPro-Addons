@@ -25,7 +25,8 @@ Some ideas for a new addon? Here are some hints...
 
 How to start
 ---------------------------
-To compile the solution you will need to reference the <b>TGD.Common.dll</b> contained in your RBRPro installation root directory. Both the RBRPro.API and the TestAddon project makes use of its packages (<b>TGD.Localization</b> and <b>TGD.Framework</b> above all).
+To compile the solution you will need to reference the <b>TGD.Common.dll</b> and the <b>RBRPro.API.dll</b> contained in your RBRPro installation root directory. Both the RBRPro.API and the TestAddon project makes use of the TGD.Common.dll classes (<b>TGD.Localization</b> and <b>TGD.Framework</b> above all).
+Select the folder <RBRPro>/Addons as the destination directory for the compiled files (where <RBRPro> is the root directory).
 
 About
 ---------------------------
