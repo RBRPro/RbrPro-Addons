@@ -32,10 +32,10 @@ About
 
 This is the small framework I wrote to allow the language switch in RBRPro, and you know how well it works...
 After evaluating other frameworks I've come to the conclusion that they didn't have the features I was looking for.
-My localization engine is really simple to use. Basically it make use of the "Tag" and "Tooltip" properties.
-The language file is a .ini file. The Load() method of the Localizer class loads the iniFile into a C# Dictionary.
+My localization engine is really simple to use. It make use of the "Tag" and "ToolTip" properties.
+The language file is a simple .ini file. The <b>Load()</b> method of the Localizer class loads the iniFile into a C# Dictionary.
 when you set Tag="SectionName. PropertyName" the engine retrievies the property "PropertyName" in the section "SectionName" of its current language.
-Once loaded the dictionary, the Translate() method of the Localizer class translates all the WPF LogicalTree, starting from the element you provide as the root (usually the main window or control). For convenience, I  use a static class as a "proxy" for the Localizer, so that i can recall it from whatever point in the code.
+Once loaded the dictionary, the <b>Translate()</b> method of the Localizer class translates all the WPF LogicalTree, starting from the element you provide as the root (usually the main window or control). For convenience, I  use a static class as a "proxy" for the Localizer, so that i can recall it from whatever point in the code.
 
 <b>TGD ContextManager</b>
 
