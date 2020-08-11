@@ -42,6 +42,10 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="TGD.Common, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dependencies\Debug\TGD.Common.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
@@ -54,14 +58,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RBRPro.Plugins\RBRPro.Addons.csproj">
-      <Project>{a542c781-2949-4c8a-8938-2f39451c12b5}</Project>
-      <Name>RBRPro.Addons</Name>
-      <Private>False</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\TGD.Common\TGD.Common.csproj">
-      <Project>{A52612D9-5696-4107-A67C-8D6FA8411AD5}</Project>
-      <Name>TGD.Common</Name>
+    <ProjectReference Include="..\RBRPro.Addons\RBRPro.API.csproj">
+      <Project>{f303a08d-01b9-4f94-95aa-a93c0297f72d}</Project>
+      <Name>RBRPro.API</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
