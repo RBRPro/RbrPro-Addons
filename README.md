@@ -45,7 +45,7 @@ Together with the ObservableCollection class provided by the TGD.Framework packa
 
 <b>Add-ons</b>
 
-An Add-on module for RRBRPro is a .NET based .dll class library, exposing one or more classes implementing the <b>IRbrProAddOn</b> interface and (optionally) the <b?ITelemetryClient</b> interface. The manager provides an object called <b>interactor</b> to allow the interaction between the Add-On and the host application.
+An Add-on module for RRBRPro is a .NET based .dll class library exposing one or more classes implementing the <b>IRbrProAddOn</b> interface and (optionally) the <b?ITelemetryClient</b> interface. The manager provides an object called <b>interactor</b> to allow the interaction between the Add-On and the host application.
 The interactor exposes a DOM, made of the main entities and contents. It also provide special events such as <b>LanguageChanged</b> that the Add-on can use to "react" to what is happening in the manager. Each entity is definend by an interface (IDriver, ICar, IStage, ICoDriver and so on).
 
 Licensing
