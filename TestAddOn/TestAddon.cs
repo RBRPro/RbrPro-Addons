@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
-using RBRPro.Addons;
+using RBRPro.Api;
 using TGD.Localization;
 using TGD.Rbr.Telemetry.Data;
 using TGD.Utils;

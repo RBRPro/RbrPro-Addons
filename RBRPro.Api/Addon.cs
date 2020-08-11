@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using TGD.Rbr.Telemetry.Data;
 
-namespace RBRPro.Addons
+namespace RBRPro.Api
 {
     /// <summary>
     /// RBRPro interactor interface
