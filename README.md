@@ -26,7 +26,7 @@ Some ideas for a new addon? Here are some hints...
 How to start
 ---------------------------
 To compile the solution you will need to reference the <b>TGD.Common.dll</b> and the <b>RBRPro.API.dll</b> contained in your RBRPro installation root directory. Both the RBRPro.API and the TestAddon project makes use of the TGD.Common.dll classes (<b>TGD.Localization</b> and <b>TGD.Framework</b> above all).
-Select the folder &lt;RBRPro&gt;/Addons as the destination directory for the compiled files (where <RBRPro> is the root directory).
+Select the folder &lt;RBRPro&gt;/Addons as the destination directory for the compiled files (where &lt;RBRPro&gt; is the root directory).
 
 About
 ---------------------------
@@ -54,4 +54,4 @@ The interactor exposes a DOM referencing the main business entities. It also pro
 
 Licensing
 ---------------------------
-You are free to download and use this code for any non-commercial purposes. For any other purpose please contact info.rbrpro@gmail.com
+You are free to download and use this code for any non-commercial purposes. For commercial purposes please contact info.rbrpro@gmail.com
