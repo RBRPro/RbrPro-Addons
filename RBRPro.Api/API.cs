@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
+/// <summary>
+/// WORK IN PROGRESS
+/// </summary>
 namespace RbrPro.API
 {
     public interface IDriver
@@ -19,6 +22,24 @@ namespace RbrPro.API
         bool IsManager { get; }
         bool IsRookie { get; }
 
+        int Cups { get; }
+        int Stars { get; }
+        int Golds { get; }
+        int Silvers { get; }
+        int Bronzes { get; }
+        int EngineerPoints { get; }
+        int Reputation { get; }
+
+        bool IsDonator { get; }
+        bool IsProDonator { get; }
+    }
+
+    public interface ITeam
+    {
+        string Name { get; }     
+        string Email { get; }
+        int YearOfBirth { get; }
+        string Country { get; }        
         int Cups { get; }
         int Stars { get; }
         int Golds { get; }
@@ -87,10 +108,6 @@ namespace RbrPro.API
         string Power { get; }
         string Transmission { get; }
         string Gears { get; }
-        string PhysicsUrl { get; }
-        string PhysicsNgp6Url { get; }
-        string ModelUrl { get; }
-        string LiveryUrl { get; }
         string LinkSpecs { get; }
         string LinkWiki { get; }
         int ForceFeedbackSensitivityTarmac { get; }
@@ -137,21 +154,17 @@ namespace RbrPro.API
     {
         string Id { get; }
         string Language { get; }
-        string Name { get; }
-        string Link { get; }
+        string Name { get; }        
         int Quality { get; }
         string Notes { get; }
         bool PacenotePlugin { get; }
         string PacenotePluginLanguage { get; }
         string SoundsDirectory { get; }
-        string ReleasedVersion { get; }
-        string ImageLink { get; }
+        string ReleasedVersion { get; }       
         string TargetLanguage { get; }
         string Author { get; }
         DateTime DateInstalled { get; }
         bool DonatorsOnly { get; }
-        string ImageLink2 { get; }
-        string Link2 { get; }
         string Archive { get; }
         bool IsEnglish { get; }
         string Description { get; }
