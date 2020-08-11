@@ -43,6 +43,11 @@ Once loaded the dictionary, the <b>Localizer</b>'s <b>Translate()</b> method tra
 This class is simple and sophisticated at the same time. It provides a convenient way to implement your viewModel because both the [RuntimeProperties] and the [ConfigProperties] are "Observables". The class allow the use of multiple configuration files as well. [ConfigProperties] are automatically loaded and saved. You can use only simple C# types but this is not a big limitation. The [RuntimeProperties] are the volatile ones, there is no limitation in the type, they can be also Collection.
 Together with the ObservableCollection class provided by the TGD.Framework package these classes are a good starting point to develop WPF based applications.
 
+Add-ons
+---------------------------
+An Add-on module for RRBRPro is a .NET based .dll class library, exposing one or more classes implementing the <b>IRbrProAddOn</b> interface and (optionally) the <b?ITelemetryClient</b> interface. The manager provides an object called <b>interactor</b> to allow the interaction between the Add-On and the host application.
+The interactor exposes a DOM, made of the main entities and contents. It also provide special events such as <b>LanguageChanged</b> that the Add-on can use to "react" to what is happening in the manager. Each entity is definend by an interface (IDriver, ICar, IStage, ICoDriver and so on) 
+
 Licensing
 ---------------------------
 You are free to download and use this code for any non-commercial purposes. For any other purpose please contact info.rbrpro@gmail.com
