@@ -44,7 +44,7 @@ This class is simple and sophisticated at the same time. It provides a convenien
 Both the kinds of properties are "Observables" and then they are "ready" for WPF data binding. The class allows the use of multiple configuration files as well.<br>
 [ConfigProperties] are automatically loaded and saved. You can use only simple C# types but this is not a big limitation.
 The [RuntimeProperties] are instead the "volatile" ones. There is no limitation in their type, they can be also data Collections.
-Together with the ObservableCollection class provided by the TGD.Framework package these classes are a good starting point to develop WPF based applications. Typically, you will set an instance of your implementation of the ContextManager as GUI's DataContext.
+Together with the ObservableCollection class provided by the TGD.Framework package these classes are a good starting point to develop WPF based applications. Typically, you will set an instance of your implementation of the ContextManager as the GUI's DataContext.
 
 <b>Add-ons</b>
 
