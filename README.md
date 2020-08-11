@@ -25,11 +25,11 @@ Some ideas for a new addon? Here are some hints...
 
 How to start
 ---------------------------
-To compile the solution you will need to reference the <b>TGD.Common.dll</b> contained in your RBRPro installation root directory. Both the RBRPro.API and the TestAddon project makes use of its packages.
+To compile the solution you will need to reference the <b>TGD.Common.dll</b> contained in your RBRPro installation root directory. Both the RBRPro.API and the TestAddon project makes use of its packages (<b>TGD.Localization</b> and <b>TGD.Framework</b> above all).
 
 About
 ---------------------------
-<b>TGD Localization Engine</b>
+<b>TGD Localization Engine (TGD.Localization.Localizer)</b>
 
 This is a small framework I wrote to allow the language switch in RBRPro, and you know how well it works...
 After evaluating other solutions, I've come to the conclusion that they didn't have the features I was looking for.
@@ -38,7 +38,7 @@ The language file is a simple .ini file. The <b>Load()</b> method of the <b>Loca
 when you set Tag="SectionName. PropertyName" the engine retrievies the property "PropertyName" in the section "SectionName" of its current language.
 Once loaded the dictionary, the <b>Localizer</b>'s <b>Translate()</b> method translates the GUI by a recursive traversal of the whole WPF LogicalTree, starting from the element you provide as the root (usually the main window or control). For convenience, I  use a static class as a "proxy" for the Localizer, so that i can recall it from whatever point in the code.
 
-<b>TGD ContextManager</b>
+<b>TGD ContextManager (TGD.Frameworl.ContextManager)</b>
 
 This class is simple and sophisticated at the same time. It provides a convenient way to implement your viewModel because both the [RuntimeProperties] and the [ConfigProperties] are "Observables". The class allow the use of multiple configuration files as well. [ConfigProperties] are automatically loaded and saved. You can use only simple C# types but this is not a big limitation. The [RuntimeProperties] are the volatile ones, there is no limitation in the type, they can be also Collection.
 Together with the ObservableCollection class provided by the TGD.Framework package these classes are a good starting point to develop WPF based applications.
