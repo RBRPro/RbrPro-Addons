@@ -17,7 +17,7 @@ It is a complete Add-On with the following features:
 Possible ideas for a new addon? Here are some examples...
 
 - Hosting a new championship with its own calendar and rankings
-- Implementing a driver for a motion simulator
+- Implementing a driver for a dynamic simulator
 - Implementing a co-driver engine (yes... TGD Navigator will be an addon...)
 
 
