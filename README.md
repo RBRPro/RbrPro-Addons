@@ -40,8 +40,8 @@ Once loaded the dictionary, the <b>Localizer</b>'s <b>Translate()</b> method tra
 
 <b>TGD ContextManager (TGD.Framework.ContextManager)</b>
 
-This class is simple and sophisticated at the same time. It provides a convenient way to implement your viewModel because both the <b>[RuntimeProperties]</b> and the <b>[ConfigProperties]</b> are "Observables". The class allow the use of multiple configuration files as well. [ConfigProperties] are automatically loaded and saved. You can use only simple C# types but this is not a big limitation. The [RuntimeProperties] are the volatile ones, there is no limitation in the type, they can be also Collection.
-Together with the ObservableCollection class provided by the TGD.Framework package these classes are a good starting point to develop WPF based applications.
+This class is simple and sophisticated at the same time. It provides a convenient way to implement your view Model providing two kinds of properties: Config and Runtime properties, implemented by special attributes Both the <b>[RuntimeProperties]</b> and the <b>[ConfigProperties]</b> are "Observables". The class allow the use of multiple configuration files as well. [ConfigProperties] are automatically loaded and saved. You can use only simple C# types but this is not a big limitation. The [RuntimeProperties] are the volatile ones, there is no limitation in the type, they can be also Collection.
+Together with the ObservableCollection class provided by the TGD.Framework package these classes are a good starting point to develop WPF based applications. Typically you use your implementation of the ContextManager as GUI's DataContext.
 
 <b>Add-ons</b>
 
