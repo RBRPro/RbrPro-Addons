@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1209
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBRPro.API", "RBRPro.Addons\RBRPro.API.csproj", "{F303A08D-01B9-4F94-95AA-A93C0297F72D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBRPro.API", "RBRPro.Api\RBRPro.API.csproj", "{F303A08D-01B9-4F94-95AA-A93C0297F72D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBRProTestAddOn", "RbrPro-TestAddOn\RBRProTestAddOn.csproj", "{59B3412B-F020-4499-8F3D-E14EDEC56CB9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAddOn", "TestAddOn\TestAddOn.csproj", "{59B3412B-F020-4499-8F3D-E14EDEC56CB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

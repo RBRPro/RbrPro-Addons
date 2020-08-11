@@ -7,8 +7,8 @@
     <ProjectGuid>{59B3412B-F020-4499-8F3D-E14EDEC56CB9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RBRProTestAddOn</RootNamespace>
-    <AssemblyName>RBRProTestAddOn</AssemblyName>
+    <RootNamespace>TestAddOn</RootNamespace>
+    <AssemblyName>TestAddOn</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
