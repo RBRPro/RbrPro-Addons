@@ -10,10 +10,10 @@ An add-on in basically a WPF Control hosted in the Add-Ons tab of the manager.
 A working example is provided.
 It is a complete Add-On with the following features:
 
-1. Uses the TGD Localization engine to translate its GUI according to the language selected in the manager
-2. Uses the Lightweight TGD MVVM framework for data binding and configuration persistence
-3. Receives the telemetry and visualizes the car speed
-4. Starts the game from a command Button
+- Uses the TGD Localization engine to translate its GUI according to the language selected in the manager
+- Uses the Lightweight TGD MVVM framework for data binding and configuration persistence
+- Receives the telemetry and visualizes the car speed in real time
+- Starts the game from a command Button
 
 Some ideas for a new addon? Here are some hints...
 
