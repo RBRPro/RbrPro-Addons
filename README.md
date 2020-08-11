@@ -14,7 +14,7 @@ It is a complete Add-On with the following features:
 3. Receive the telemetry and visualizes the car speed
 4. Start the game from a command Button
 
-Possible ideas for a new addon? 
+Possible ideas for a new addon? Here are some examples...
 
 - Hosting a new championship with its own calendar and rankings
 - Implementing a driver for a motion simulator
