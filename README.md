@@ -1,4 +1,5 @@
 # RbrPro-Addons
+First of all, what the hell is RBRPro? <b>Discover it here <a href="https://www.rbrpro.org">https://www.rbrpro.org</a></b><br><br>
 Want to develop an addon for the RBRPro manager? Welcome to the right place!
 
 Since version <b>0.3.0.0</b> the RBRPro Manager supports Add-Ons. An NGP6 Telemetry server has been implemented. An add-on can act as a Telemetry client and receive telemetry data from the manager.
