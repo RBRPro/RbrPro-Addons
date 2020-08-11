@@ -44,4 +44,4 @@ Together with the ObservableCollection class provided by the TGD.Framework packa
 
 Licensing
 ---------------------------
-You are free to download and use this code for non-commercial purposes. For any other purpose please contact info.rbrpro@gmail.com
+You are free to download and use this code for any non-commercial purposes. For any other purpose please contact info.rbrpro@gmail.com
