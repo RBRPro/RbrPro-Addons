@@ -36,7 +36,7 @@ After evaluating other solutions, I've come to the conclusion that they didn't h
 My localization engine is really simple to use. It make use of the "Tag" and "ToolTip" properties.
 The language file is a simple .ini file. The <b>Load()</b> method of the <b>Localizer</b> class loads the iniFile into a C# Dictionary.
 when you set Tag="SectionName. PropertyName" the engine retrievies the property "PropertyName" in the section "SectionName" of its current language.
-Once loaded the dictionary, the <b>Localizer</b>'s <b>Translate()</b> method translates by a recursive traversal of the whole WPF LogicalTree, starting from the element you provide as the root (usually the main window or control). For convenience, I  use a static class as a "proxy" for the Localizer, so that i can recall it from whatever point in the code.
+Once loaded the dictionary, the <b>Localizer</b>'s <b>Translate()</b> method translates the GUI by a recursive traversal of the whole WPF LogicalTree, starting from the element you provide as the root (usually the main window or control). For convenience, I  use a static class as a "proxy" for the Localizer, so that i can recall it from whatever point in the code.
 
 <b>TGD ContextManager</b>
 
