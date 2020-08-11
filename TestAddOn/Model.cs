@@ -37,7 +37,7 @@ namespace RBRProTestAddOn
         /// <summary>
         /// The file TestAddOn.ini is used as the main repository of the persistent properties
         /// </summary>
-        public Model() : base("TestAddon\\TestAddOn.ini")
+        public Model() : base("Addons\\TestAddon\\TestAddOn.ini")
         {
             // Other model initialization code here
         }

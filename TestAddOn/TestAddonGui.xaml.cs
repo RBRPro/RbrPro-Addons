@@ -44,7 +44,7 @@ namespace RBRProTestAddOn
         private void _rbrPro_SelectedLanguageChanged(object sender, string newLanguage)
         {
             // Translates the GUI according to the language selected in the manager
-            Local.Load($"TestAddon\\languages\\{newLanguage}.ini");
+            Local.Load($"Addons\\TestAddon\\languages\\{newLanguage}.ini");
             Local.Translate(this);
         }
 
