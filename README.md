@@ -10,7 +10,7 @@ A working example is provided.
 It is a complete Add-On with the following features:
 
 1. Uses the TGD Localization engine to translate its GUI according to the lanaguage selected in the manager
-2. Uses the TGD Viewmodel framework for data binding and configuration persistence
+2. Uses the TGD MVVM framework for data binding and configuration persistence
 3. Receive the telemetry and visualizes the car speed
 4. Start the game from a command Button
 
