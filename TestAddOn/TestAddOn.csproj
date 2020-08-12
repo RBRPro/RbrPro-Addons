@@ -60,7 +60,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="icon.png" />
+    <Resource Include="icon.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\RBRProManager\TGD.Common\TGD.Common.csproj">

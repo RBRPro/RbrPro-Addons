@@ -26,7 +26,7 @@ namespace RBRProTestAddOn
         public string Description { get => "This is a Test Add-On"; }
         public string Author { get => "TGD"; }
         
-        public Image Icon => new Image { Source = new BitmapImage(new Uri($"pack://application:,,,/TestAddon;component/icon.png", UriKind.Absolute)) };
+        public Image Icon => new Image { Source = new BitmapImage(new Uri($"pack://application:,,,/TestAddOn;component/icon.png", UriKind.Absolute)) };
         #endregion
 
         // The interface used to interact with the manger
@@ -38,10 +38,7 @@ namespace RBRProTestAddOn
         public TestAddon()
         {
             _model = new Model();
-            _model.CarSpeed = 1;
-            _model.CarSpeed = _model.CarSpeed;
-            _model.ShowCarSpeed = true;
-            _model.ShowCarSpeed = _model.ShowCarSpeed;
+            _model.CarSpeed = 1;    // Just to test the data binding...                        
         }
 
         /// <summary>
