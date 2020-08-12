@@ -2,7 +2,7 @@
 First of all, what the hell is RBRPro? <b>Discover it here <a href="https://www.rbrpro.org">https://www.rbrpro.org</a></b><br><br>
 Want to develop an addon for the RBRPro manager? Welcome to the right place!
 
-Since version <b>0.3.0.0</b> the RBRPro Manager supports Add-Ons. An NGP6 Telemetry server has been implemented and the support for Add-ons has been added. An add-on can behave as a client and receive telemetric data from the manager.
+Since version <b>0.3.0.0</b> the RBRPro Manager supports Add-Ons. A NGP6 Telemetry "router" has been implemented and the support for Add-ons has been added. An add-on can become a client and receive telemetric data from the manager.
 
 In other words, the RBRPro Manager behaves in a way which is very similar to SimHub (do you know it?). It receives the NGP telemetry from the game via UDP protocol and provides the data to its add-ons.
 An add-on is basically a WPF Control hosted in the Add-Ons tab of the manager.
@@ -33,10 +33,10 @@ About
 <b>TGD Localization Engine (TGD.Localization.Localizer)</b>
 
 This is a small framework I wrote to allow the language switch in RBRPro... and you know how well it works! :)<br>
-After evaluating other solutions, I've come to the conclusion that they didn't have the features I was looking for.
+After evaluating other solutions, I've come to the conclusion that they didn't have the features I was looking for and decided to make my implementation.
 My localization engine is really simple to use but light and powerful at the same time. It make use of the "Tag" and "ToolTip" properties.
 The language file is a simple .ini file. The <b>Load()</b> method of the <b>Localizer</b> class loads the iniFile into a C# Dictionary.
-When you set Tag="SectionName. PropertyName" in the XAML, you help the engine to retrieve the property "PropertyName" in the section "SectionName" of its current language definition.
+When you set Tag="SectionName. PropertyName" in the XAML, you are telling the engine to retrieve the property "PropertyName" in the section "SectionName" of its current language definition.
 Once loaded the dictionary, the <b>Localizer</b>'s <b>Translate()</b> method translates the GUI by a recursive traversal of the whole WPF LogicalTree, starting from the element you provide as the root (usually the main window or control). For convenience, I  use a static class as a "proxy" for the Localizer, so that i can recall it from whatever point in the code.
 
 <b>TGD ContextManager (TGD.Framework.ContextManager)</b>
@@ -50,7 +50,7 @@ Together with the ObservableCollection class provided by the TGD.Framework packa
 <b>Add-ons</b>
 
 An Add-on module for RBRPro is a .NET based .dll class library exposing one or more classes implementing the <b>IRbrProAddOn</b> interface and (optionally) the <b>ITelemetryClient</b> interface. The manager provides an object called <b>interactor</b> to allow the interaction between the Add-On and the host application.
-The interactor exposes a DOM referencing the main business entities. It also provide special events such as <b>LanguageChanged</b> that the Add-on can use to "react" to what is happening in the manager. Each entity is definend by an interface (IDriver, ICar, IStage, ICoDriver and so on).
+The interactor exposes a DOM referencing the main business entities. It also provide special events such as <b>LanguageChanged</b> that the Add-on can use to "react" to what is happening in the manager. Each DOM entity is definend by an interface (IDriver, ICar, IStage, ICoDriver and so on).
 
 Licensing
 ---------------------------
