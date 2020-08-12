@@ -38,6 +38,10 @@ namespace RBRProTestAddOn
         public TestAddon()
         {
             _model = new Model();
+            _model.CarSpeed = 1;
+            _model.CarSpeed = _model.CarSpeed;
+            _model.ShowCarSpeed = true;
+            _model.ShowCarSpeed = _model.ShowCarSpeed;
         }
 
         /// <summary>

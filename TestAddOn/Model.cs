@@ -8,7 +8,7 @@ using TGD.Framework;
 
 namespace RBRProTestAddOn
 {
-    public class Model : ContextManager
+    public class Model : DynamicContextManager
     {
         /// <summary>
         /// The Persistent Properties are loaded and saved automatically. They can have a default value. 
@@ -17,10 +17,10 @@ namespace RBRProTestAddOn
         #region PERSISTENT PROPERTIES
         [DefaultValue(true)]
         [ConfigProperty]
-        public bool ShowCarSpeed { get { return GetProperty<bool>("ShowCarSpeed"); } set { SetProperty("ShowCarSpeed", value); } }
+        public bool ShowCarSpeed { get { return GetCfgProperty<bool>(); } set { SetCfgProperty(value); } }
 
         [ConfigProperty]
-        public string AnotherPersistentProperty { get { return GetProperty<string>("AnotherPersistentProperty"); } set { SetProperty("AnotherPersistentProperty", value); } }
+        public string AnotherPersistentProperty { get { return GetCfgProperty<string>(); } set { SetCfgProperty(value); } }
         #endregion
 
         /// <summary>
@@ -28,10 +28,10 @@ namespace RBRProTestAddOn
         /// </summary>
         #region RUNTIME PROPERTIES
         [RuntimeProperty]
-        public float CarSpeed { get { return GetRuntimeProperty<float>("CarSpeed"); } set { SetRuntimeProperty("CarSpeed", value); } }
+        public float CarSpeed { get { return GetRuntimeProperty<float>(); } set { SetRuntimeProperty(value); } }
 
         [RuntimeProperty]
-        public int AnotherRuntimeProperty { get { return GetRuntimeProperty<int>("AnotherRuntimeProperty"); } set { SetRuntimeProperty("AnotherRuntimeProperty", value); } }
+        public int AnotherRuntimeProperty { get { return GetRuntimeProperty<int>(); } set { SetRuntimeProperty(value); } }
         #endregion
 
         /// <summary>

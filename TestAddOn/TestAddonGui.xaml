@@ -7,8 +7,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="26,64,0,0" VerticalAlignment="Top" Width="228" Click="Button_Click" Tag="Test.HelloWorld" Height="29"/>
+        <!-- The following button has a Tag and a ToolTip. They will be translated by the TGD.Localization engine -->
+        <Button Content="Button" HorizontalAlignment="Left" Margin="26,64,0,0" VerticalAlignment="Top" Width="228" Click="Button_Click" Tag="Test.HelloWorld" ToolTip="Test.HelloWorld" Height="29"/>
         <Label Content="{Binding CarSpeed}" FontSize="22" HorizontalAlignment="Left" Margin="26,10,0,0" VerticalAlignment="Top" Width="228"/>
-
     </Grid>
 </UserControl>
