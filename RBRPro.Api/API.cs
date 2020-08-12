@@ -9,6 +9,7 @@ namespace RbrPro.API
     public interface IDriver
     {
         int Number { get; }
+        
         string Name { get; }
         string NickName { get; }
         string Email { get; }
@@ -21,7 +22,7 @@ namespace RbrPro.API
         bool IsSupport { get; }
         bool IsManager { get; }
         bool IsRookie { get; }
-
+       
         int Cups { get; }
         int Stars { get; }
         int Golds { get; }
@@ -32,13 +33,14 @@ namespace RbrPro.API
 
         bool IsDonator { get; }
         bool IsProDonator { get; }
+
+        ITeam Team { get; }
     }
 
     public interface ITeam
     {
         string Name { get; }     
-        string Email { get; }
-        int YearOfBirth { get; }
+        string Email { get; }        
         string Country { get; }        
         int Cups { get; }
         int Stars { get; }
@@ -47,9 +49,16 @@ namespace RbrPro.API
         int Bronzes { get; }
         int EngineerPoints { get; }
         int Reputation { get; }
+        string AllowedCategories { get; }
 
-        bool IsDonator { get; }
-        bool IsProDonator { get; }
+        int NumMembers { get; }
+        int NumEngineers { get; }
+        int NumDrivers { get; }
+        int NumSupports { get; }
+        int NumManagers { get; }
+        int NumRookies { get; }
+                        
+        List<IDriver> Members { get; }
     }
 
     public interface IStage

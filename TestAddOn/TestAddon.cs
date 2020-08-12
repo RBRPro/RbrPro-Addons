@@ -15,8 +15,8 @@ namespace RBRProTestAddOn
 {
     /// <summary>
     /// The TestAddon
-    /// Basically a RBRPro Addon is a class implementing the IRbrProAddOn interface.
-    /// Optionally the Addon can receive telemetry by RBRPro by implementing the ITelemetryClient interface
+    /// A RBRPro Addon is a class implementing the IRbrProAddOn interface.
+    /// Optionally, the Addon can receive telemetry by implementing the ITelemetryClient interface
     /// </summary>
     public class TestAddon : IRbrProAddOn, ITelemetryClient
     {
@@ -55,7 +55,7 @@ namespace RBRProTestAddOn
         /// <param name="rbrProInteractor"></param>
         public void Ready(IRbrPro rbrProInteractor)
         {
-           
+
         }
 
         /// <summary>
