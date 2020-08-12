@@ -26,7 +26,7 @@ namespace RBRProTestAddOn
         public string Description { get => "This is a Test Add-On"; }
         public string Author { get => "TGD"; }
         
-        public Image Icon => new Image { Source = new BitmapImage(new Uri($"pack://application:,,,/RBRTelemetry;component/icon.png", UriKind.Absolute)) };
+        public Image Icon => new Image { Source = new BitmapImage(new Uri($"pack://application:,,,/TestAddon;component/icon.png", UriKind.Absolute)) };
         #endregion
 
         // The interface used to interact with the manger
