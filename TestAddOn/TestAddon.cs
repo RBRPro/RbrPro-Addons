@@ -21,11 +21,12 @@ namespace RBRProTestAddOn
     public class TestAddon : IRbrProAddOn, ITelemetryClient
     {
         // Maybe in future these properties will be replaced by class attributes
-        #region PLUGIN INFO
+        #region ABOUT
         public string Name { get => "Test Add-On"; }
         public string Description { get => "This is a Test Add-On"; }
         public string Author { get => "TGD"; }
         
+        // An optional icon is provided to the manager, just to decorate the tab item a bit...
         public Image Icon => new Image { Source = new BitmapImage(new Uri($"pack://application:,,,/TestAddOn;component/icon.png", UriKind.Absolute)) };
         #endregion
 
