@@ -39,7 +39,7 @@ The language file is a simple .ini file. The <b>Load()</b> method of the <b>Loca
 When you set Tag="SectionName. PropertyName" in the XAML, you are telling the engine to retrieve the property "PropertyName" in the section "SectionName" of its current language definition.
 Once loaded the dictionary, the <b>Localizer</b>'s <b>Translate()</b> method translates the GUI by a recursive traversal of the whole WPF LogicalTree, starting from the element you provide as the root (usually the main window or control). For convenience, I  use a static class as a "proxy" for the Localizer, so that i can recall it from whatever point in the code.
 
-<b>TGD ContextManager (TGD.Framework.ContextManager)</b>
+<b>TGD ContextManager (TGD.Framework.DynamicContextManager)</b>
 
 This class is simple and sophisticated at the same time. It provides a convenient way to implement your view Model providing two kinds of properties: Config and Runtime properties, implemented respectively by the special attributes <b>[RuntimeProperties]</b> and <b>[ConfigProperties]</b>. 
 Both the kinds of properties are "Observables" and then they are "ready" for WPF data binding. The class allows the use of multiple configuration files as well.<br>
