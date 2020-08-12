@@ -60,7 +60,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="img\addon.png" />
+    <Content Include="icon.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\RBRProManager\TGD.Common\TGD.Common.csproj">
@@ -72,7 +72,9 @@
       <Name>RBRPro.API</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="img\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="TestAddOn\languages\czech.ini">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
