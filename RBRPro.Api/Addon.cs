@@ -6,11 +6,16 @@ using TGD.Rbr.Telemetry.Data;
 
 namespace RBRPro.Api
 {
+    public static class AddOns
+    {
+        public const string BASEPATH = "Addons";     
+    }
+
     /// <summary>
     /// RBRPro interactor interface
     /// </summary>
     public interface IRbrPro
-    {        
+    {
         IDriver User { get; }
         ICar SelectedCar { get; }
         IStage SelectedStage { get; }

@@ -29,7 +29,7 @@ namespace RBRProTestAddOn
         public Image Icon => new Image { Source = new BitmapImage(new Uri($"pack://application:,,,/TestAddOn;component/icon.png", UriKind.Absolute)) };
         #endregion
 
-        // The interface used to interact with the manger
+        // The interface used to interact with the manager
         public IRbrPro _interactor;
 
         // The viewmodel class
@@ -38,7 +38,7 @@ namespace RBRProTestAddOn
         public TestAddon()
         {
             _model = new Model();
-            _model.CarSpeed = 1;    // Just to test the data binding...                        
+            _model.CarSpeed = 1;    // Just to test the if the data binding works... and of course it does 
         }
 
         /// <summary>
