@@ -54,4 +54,4 @@ The interactor exposes a DOM referencing the main business entities. It also pro
 
 Licensing
 ---------------------------
-You are free to download and use this code for any non-commercial purposes. For commercial purposes please contact info.rbrpro@gmail.com
+You are free to download and use this code for any non-commercial purposes. For commercial usage please contact info.rbrpro@gmail.com
