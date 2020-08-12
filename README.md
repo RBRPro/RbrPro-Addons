@@ -33,7 +33,7 @@ About
 <b>TGD Localization Engine (TGD.Localization.Localizer)</b>
 
 This is a small framework I wrote to allow the language switch in RBRPro... and you know how well it works! :)<br>
-After evaluating other solutions, I've come to the conclusion that they didn't have the features I was looking for.
+After evaluating other solutions, I've come to the conclusion that they didn't have the features I was looking for and decided to make my implementation.
 My localization engine is really simple to use but light and powerful at the same time. It make use of the "Tag" and "ToolTip" properties.
 The language file is a simple .ini file. The <b>Load()</b> method of the <b>Localizer</b> class loads the iniFile into a C# Dictionary.
 When you set Tag="SectionName. PropertyName" in the XAML, you help the engine to retrieve the property "PropertyName" in the section "SectionName" of its current language definition.
