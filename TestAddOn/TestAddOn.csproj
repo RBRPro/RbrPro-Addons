@@ -66,10 +66,12 @@
     <ProjectReference Include="..\..\RBRProManager\TGD.Common\TGD.Common.csproj">
       <Project>{a52612d9-5696-4107-a67c-8d6fa8411ad5}</Project>
       <Name>TGD.Common</Name>
+      <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\RBRPro.Api\RBRPro.API.csproj">
       <Project>{f303a08d-01b9-4f94-95aa-a93c0297f72d}</Project>
       <Name>RBRPro.API</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
