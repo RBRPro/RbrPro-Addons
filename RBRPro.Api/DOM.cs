@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 
 /// <summary>
-/// WORK IN PROGRESS
+/// RBRPro Domain Object Model
+/// Still work in progress
 /// </summary>
 namespace RbrPro.API
 {

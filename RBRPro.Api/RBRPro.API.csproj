@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="API.cs" />
+    <Compile Include="DOM.cs" />
     <Compile Include="Addon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
