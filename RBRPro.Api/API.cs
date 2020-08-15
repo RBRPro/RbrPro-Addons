@@ -99,7 +99,7 @@ namespace RbrPro.API
         bool HasDocLink { get; }
         bool HasAnUpdate { get; }
         bool IsInstalled { get; }
-        bool CanAddToQuickList { get; }
+        bool CanSelect { get; }
     }
 
     public interface ICar
@@ -145,18 +145,18 @@ namespace RbrPro.API
     public interface IStageList
     {
         List<string> Countries { get; }
-        List<string> OptionPackTypes { get; }
-        Dictionary<string, IStage> Stages { get; }
-        Dictionary<string, IStage> OptionPacks { get; }
-        Dictionary<int, IStage> StagesByCode { get; }
-        Dictionary<string, IStage> OriginalTracks { get; }
+        List<string> OptionPackTypes { get; }        
+        IEnumerable<IStage> GetStages();
+        IEnumerable<IStage> GetOptionPacks();
+        IEnumerable<IStage> GetOriginalStages();
+        IStage GetStageByCode(int code);
     }
 
     public interface ICarList
     {
-        List<string> Categories { get; }
-        Dictionary<string, ICar> Cars { get; }
-        List<ICar> GetCarsInGroup(string group);
+        List<string> Categories { get; }        
+        IEnumerable<ICar> GetCars();
+        IEnumerable<ICar> GetCarsInGroup(string group);
     }
 
     public interface ICoDriver
@@ -184,7 +184,7 @@ namespace RbrPro.API
     public interface ICoDriverList
     {
         List<string> Languages { get; }        
-        Dictionary<string, ICoDriver> CoDrivers { get;  }
-        List<ICoDriver> GetCoDriversByLanguage(string language);        
+        IEnumerable<ICoDriver> GetCoDrivers();
+        IEnumerable<ICoDriver> GetCoDriversByLanguage(string language);        
     }
 }
