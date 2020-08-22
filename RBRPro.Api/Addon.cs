@@ -1,6 +1,7 @@
 ﻿using RbrPro.API;
 using System;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 using TGD.Rbr.Telemetry.Data;
 
@@ -16,6 +17,8 @@ namespace RBRPro.Api
     /// </summary>
     public interface IRbrPro
     {
+        Window MainWindow { get; }
+
         IDriver User { get; }
         ICar SelectedCar { get; }
         IStage SelectedStage { get; }
@@ -25,7 +28,7 @@ namespace RBRPro.Api
         ICoDriverList CoDriverList { get; }
 
         Task StartGame(bool a, bool b, bool c);
-
+        
         event EventHandler<ICar> SelectedCarChanged;
         event EventHandler<IStage> SelectedStageChanged;
         event EventHandler<ICoDriver> SelectedCoDriverChanged;
