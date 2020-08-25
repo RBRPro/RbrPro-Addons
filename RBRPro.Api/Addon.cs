@@ -33,6 +33,7 @@ namespace RBRPro.Api
         event EventHandler<IStage> SelectedStageChanged;
         event EventHandler<ICoDriver> SelectedCoDriverChanged;
         event EventHandler<ICoDriver> ActiveCoDriverChanged;
+        event EventHandler<TelemetryData> DataReceived;
         event EventHandler<string> SelectedLanguageChanged;
         event EventHandler GameStarted;
         event EventHandler GameStopped;
@@ -61,6 +62,12 @@ namespace RBRPro.Api
         void Ready(IRbrPro rbrProInteractor);
 
         /// <summary>
+        /// Called to notify a change of the parent window when the addon is attached or detached
+        /// </summary>
+        /// <param name="parent"></param>
+        void OnParentWindowChange(Window parent);
+        
+        /// <summary>
         /// Returns the Add-on GUI interface (a WPF Control)
         /// </summary>
         /// <returns></returns>
@@ -70,13 +77,5 @@ namespace RBRPro.Api
         /// Called before exit
         /// </summary>
         void Exit();
-    }
-
-    /// <summary>
-    /// RBRPro interface for telemetry clients
-    /// </summary>
-    public interface ITelemetryClient
-    {
-        void DataReceived(TelemetryData data);
     }
 }
