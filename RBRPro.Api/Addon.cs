@@ -4,39 +4,13 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using TGD.Rbr.Telemetry.Data;
+using System.Speech.Recognition;
 
 namespace RBRPro.Api
 {
     public static class AddOns
     {
         public const string BASEPATH = "Addons";     
-    }
-
-    /// <summary>
-    /// RBRPro interactor interface
-    /// </summary>
-    public interface IRbrPro
-    {
-        Window MainWindow { get; }
-
-        IDriver User { get; }
-        ICar SelectedCar { get; }
-        IStage SelectedStage { get; }
-        ICoDriver SelectedCodriver { get; }
-        ICarList CarList { get; }
-        IStageList StageList { get; }
-        ICoDriverList CoDriverList { get; }
-
-        Task StartGame(bool a, bool b, bool c);
-        
-        event EventHandler<ICar> SelectedCarChanged;
-        event EventHandler<IStage> SelectedStageChanged;
-        event EventHandler<ICoDriver> SelectedCoDriverChanged;
-        event EventHandler<ICoDriver> ActiveCoDriverChanged;
-        event EventHandler<TelemetryData> DataReceived;
-        event EventHandler<string> SelectedLanguageChanged;
-        event EventHandler GameStarted;
-        event EventHandler GameStopped;
     }
 
     /// <summary>
@@ -48,6 +22,7 @@ namespace RBRPro.Api
         string Description { get; }
         string Author { get; }
         Image Icon { get; }
+        bool IsDetachable { get; }
 
         /// <summary>
         /// Called on loading

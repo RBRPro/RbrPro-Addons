@@ -22,6 +22,10 @@ namespace RBRProTestAddOn
 
         // An optional icon is provided to the manager, just to decorate the tab item a bit...
         public Image Icon => new Image { Source = new BitmapImage(new Uri($"pack://application:,,,/TestAddOn;component/icon.png", UriKind.Absolute)) };
+
+        // This property tells the manager if the addon can be detached in a separate window or not
+        public bool IsDetachable { get => false; }
+
         #endregion
 
         // The interface used to interact with the manager

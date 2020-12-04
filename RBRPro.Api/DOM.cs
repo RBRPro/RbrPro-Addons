@@ -32,6 +32,9 @@ namespace RbrPro.API
         int EngineerPoints { get; }
         int Reputation { get; }
 
+        string AllowedCategories { get; }
+        string AllowedCategories2 { get; }
+
         bool IsDonator { get; }
         bool IsProDonator { get; }
 
@@ -50,15 +53,17 @@ namespace RbrPro.API
         int Bronzes { get; }
         int EngineerPoints { get; }
         int Reputation { get; }
-        string AllowedCategories { get; }
-
+        
         int NumMembers { get; }
         int NumEngineers { get; }
         int NumDrivers { get; }
         int NumSupports { get; }
         int NumManagers { get; }
         int NumRookies { get; }
-                        
+
+        string AllowedCategories { get; }
+        string AllowedCategories2 { get; }
+
         List<IDriver> Members { get; }
     }
 
@@ -179,6 +184,7 @@ namespace RbrPro.API
         bool IsEnglish { get; }
         string Description { get; }
         string InstalledVersion { get; }
+        string NavigatorName { get; }
         bool HasAnUpdate { get; }
     }
 

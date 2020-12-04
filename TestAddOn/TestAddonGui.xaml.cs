@@ -39,12 +39,12 @@ namespace RBRProTestAddOn
         private void _rbrPro_ActiveCoDriverChanged(object sender, RbrPro.API.ICoDriver e)
         {
             //MsgBox.Info($"The active codriver changed: the new one is {e.Name}");
-        }        
+        }
 
         private void _rbrPro_SelectedLanguageChanged(object sender, string newLanguage)
         {
             // Translates the GUI according to the language selected in the manager
-            Local.Load($"Addons\\TestAddon\\languages\\{newLanguage}.ini");
+            Local.Load($"{AddOns.BASEPATH}\\TelemetryRecorder\\languages\\{newLanguage}.ini");
             Local.Translate(this);
         }
 
