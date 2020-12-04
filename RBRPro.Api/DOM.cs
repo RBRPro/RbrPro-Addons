@@ -9,6 +9,7 @@ namespace RbrPro.API
 {
     public interface IDriver
     {
+        int Id { get; }
         int Number { get; }
         
         string Name { get; }
@@ -16,15 +17,15 @@ namespace RbrPro.API
         string Email { get; }
         int YearOfBirth { get; }
         string Country { get; }
-        string Category { get; }
-        bool IsWRC { get; }
-        bool IsDriver { get; }
+
         bool IsEngineer { get; }
         bool IsSupport { get; }
         bool IsManager { get; }
         bool IsRookie { get; }
-       
-        int Cups { get; }
+
+        int GoldCups { get; }
+        int SilverCups { get; }
+        int BronzeCups { get; }
         int Stars { get; }
         int Golds { get; }
         int Silvers { get; }
@@ -37,21 +38,24 @@ namespace RbrPro.API
 
         bool IsDonator { get; }
         bool IsProDonator { get; }
+        bool IsPatron { get; }
 
         ITeam Team { get; }
     }
 
     public interface ITeam
     {
+        int Id { get; }
         string Name { get; }     
         string Email { get; }        
         string Country { get; }        
-        int Cups { get; }
+        int GoldCups { get; }
+        int SilverCups { get; }
+        int BronzeCups { get; }
         int Stars { get; }
         int Golds { get; }
         int Silvers { get; }
         int Bronzes { get; }
-        int EngineerPoints { get; }
         int Reputation { get; }
         
         int NumMembers { get; }
@@ -71,7 +75,6 @@ namespace RbrPro.API
     {
         string StageName { get; }
         string Country { get; }
-        string OptionPackType { get; }
         int Length { get; }
         int Difficulty { get; }
         int TrackCodeNormal { get; }
@@ -90,11 +93,12 @@ namespace RbrPro.API
         string Author { get; }
         string Notes { get; }
         string Link { get; }
-
         string ReleasedVersion { get; }
         string Key { get; }
+        string KeyReversed { get; }
+        string KeySnow { get; }
+        string KeySnowReversed { get; }
         bool IsOriginalStage { get; }
-        bool IsOptionPack { get; }
         bool RequireNightPlugin { get; }
         bool IsHeavy { get; }
         bool IsBuggy { get; }
@@ -150,10 +154,8 @@ namespace RbrPro.API
 
     public interface IStageList
     {
-        List<string> Countries { get; }
-        List<string> OptionPackTypes { get; }        
-        IEnumerable<IStage> GetStages();
-        IEnumerable<IStage> GetOptionPacks();
+        List<string> Countries { get; }       
+        IEnumerable<IStage> GetStages();        
         IEnumerable<IStage> GetOriginalStages();
         IStage GetStageByCode(int code);
     }
@@ -195,3 +197,4 @@ namespace RbrPro.API
         IEnumerable<ICoDriver> GetCoDriversByLanguage(string language);        
     }
 }
+

@@ -1,10 +1,5 @@
 ﻿using RBRPro.Api;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TGD.Framework;
 using TGD.Utils;
 
@@ -56,7 +51,7 @@ namespace RBRProTestAddOn
         /// <summary>
         /// The file TestAddOn.ini is used as the main repository of the persistent properties
         /// </summary>
-        public Model() : base($"{AddOns.BASEPATH}\\TestAddon\\TestAddOn.ini")
+        public Model(TestAddon addon) : base($"{AddOns.BASEPATH}\\{addon.Name}\\{addon.Name}.ini")
         {
             // Other model initialization code here
         }

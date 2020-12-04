@@ -36,7 +36,7 @@ namespace RBRProTestAddOn
 
         public TestAddon()
         {
-            _model = new Model();
+            _model = new Model(this);
             _model.CarSpeed = 1;    // Just to test the if the data binding works... and of course it does 
         }
 
@@ -71,7 +71,7 @@ namespace RBRProTestAddOn
         /// <returns></returns>
         public System.Windows.Controls.Control GetGui()
         {
-            return new TestAddonGui(_interactor, _model);
+            return new TestAddonGui(this, _interactor, _model);
         }
 
         public void Exit()

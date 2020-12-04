@@ -1,19 +1,6 @@
 ﻿using RBRPro.Api;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using TGD.Utils;
 
 namespace RBRProTestAddOn
 {
@@ -24,9 +11,11 @@ namespace RBRProTestAddOn
     {
         IRbrPro _rbrPro = null;
         Model _model = null;
+        TestAddon _addon = null;
 
-        public TestAddonGui(IRbrPro interactor, Model model)
+        public TestAddonGui(IRbrProAddOn addon, IRbrPro interactor, Model model)
         {
+            _addon = (TestAddon) addon;
             this.DataContext = _model = model;
             _rbrPro = interactor;
 
@@ -44,7 +33,7 @@ namespace RBRProTestAddOn
         private void _rbrPro_SelectedLanguageChanged(object sender, string newLanguage)
         {
             // Translates the GUI according to the language selected in the manager
-            Local.Load($"{AddOns.BASEPATH}\\TelemetryRecorder\\languages\\{newLanguage}.ini");
+            Local.Load($"{AddOns.BASEPATH}\\{_addon.Name}\\languages\\{newLanguage}.ini");
             Local.Translate(this);
         }
 
