@@ -102,6 +102,21 @@ namespace RbrPro.API
         bool RequireNightPlugin { get; }
         bool IsHeavy { get; }
         bool IsBuggy { get; }
+        bool DonatorsOnly { get; }
+        string DocLink { get; }
+        bool HasDocLink { get; }
+        bool HasAnUpdate { get; }
+        bool IsInstalled { get; }
+        bool CanSelect { get; }
+    }
+
+    public interface IOptionPack
+    {
+        string Name { get; }        
+        string Author { get; }
+        string Notes { get; }
+        string Link { get; }
+        string ReleasedVersion { get; }        
         string OptionKey { get; }
         string LinkOff { get; }
         bool DonatorsOnly { get; }
@@ -109,7 +124,6 @@ namespace RbrPro.API
         bool HasDocLink { get; }
         bool HasAnUpdate { get; }
         bool IsInstalled { get; }
-        bool CanSelect { get; }
     }
 
     public interface ICar
@@ -158,13 +172,22 @@ namespace RbrPro.API
         IEnumerable<IStage> GetStages();        
         IEnumerable<IStage> GetOriginalStages();
         IStage GetStageByCode(int code);
+        IStage GetStageByName(string name);
+    }
+
+    public interface IOptionPackList
+    {
+        IEnumerable<IOptionPack> GetOptionPacks();
+        IOptionPack GetOptionPackByName(string name);
+        IOptionPack GetOptionPackByKey(string key);
     }
 
     public interface ICarList
     {
         List<string> Categories { get; }        
         IEnumerable<ICar> GetCars();
-        IEnumerable<ICar> GetCarsInGroup(string group);
+        IEnumerable<ICar> GetCarsInGroup(string group);        
+        ICar GetCarByPhysics(string name);
     }
 
     public interface ICoDriver
@@ -194,7 +217,7 @@ namespace RbrPro.API
     {
         List<string> Languages { get; }        
         IEnumerable<ICoDriver> GetCoDrivers();
-        IEnumerable<ICoDriver> GetCoDriversByLanguage(string language);        
+        IEnumerable<ICoDriver> GetCoDriversByLanguage(string language);   
     }
 }
 

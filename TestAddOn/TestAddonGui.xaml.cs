@@ -32,6 +32,9 @@ namespace RBRProTestAddOn
 
         private void _rbrPro_SelectedLanguageChanged(object sender, string newLanguage)
         {
+            //If you want to generate a translation iniFile uncomment the following line
+            //Local.GenerateToFile($"{AddOns.BASEPATH}\\{_addon.Name}\\languages\\{language}.ini");
+
             // Translates the GUI according to the language selected in the manager
             Local.Load($"{AddOns.BASEPATH}\\{_addon.Name}\\languages\\{newLanguage}.ini");
             Local.Translate(this);

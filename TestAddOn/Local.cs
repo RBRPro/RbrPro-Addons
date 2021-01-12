@@ -29,5 +29,10 @@ namespace RBRProTestAddOn
         {
             _localizer.Translate(e);
         }
+
+        public static void GenerateToFile(string path)
+        {
+            _localizer.GenerateToFile(path);
+        }
     }
 }

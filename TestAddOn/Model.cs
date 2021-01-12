@@ -44,8 +44,8 @@ namespace RBRProTestAddOn
         [RuntimeProperty("Car.Speed")]
         public float CarSpeed { get { return GetRuntimeProperty<float>(); } set { SetRuntimeProperty(value); } }
 
-        [RuntimeProperty]
-        public int AnotherRuntimeProperty { get { return GetRuntimeProperty<int>(); } set { SetRuntimeProperty(value); } }
+        /*[RuntimeProperty]
+        public int AnotherRuntimeProperty { get { return GetRuntimeProperty<int>(); } set { SetRuntimeProperty(value); } }*/
         #endregion
 
         /// <summary>
@@ -55,5 +55,7 @@ namespace RBRProTestAddOn
         {
             // Other model initialization code here
         }
+
+
     }
 }

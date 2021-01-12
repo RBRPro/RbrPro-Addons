@@ -16,7 +16,7 @@ namespace RBRProTestAddOn
     {
         // Maybe in future these properties will be replaced by class attributes
         #region ABOUT
-        public string Name { get => "Test Add-On"; }
+        public string Name { get => "TestAddOn"; }
         public string Description { get => "This is a Test Add-On"; }
         public string Author { get => "TGD"; }
 

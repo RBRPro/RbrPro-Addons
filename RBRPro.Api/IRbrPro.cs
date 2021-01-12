@@ -25,6 +25,7 @@ namespace RBRPro.Api
         ICoDriver SelectedCodriver { get; }
         ICarList CarList { get; }
         IStageList StageList { get; }
+        IOptionPackList OptionPackList { get; }
         ICoDriverList CoDriverList { get; }
 
         Task StartGame(bool a, bool b, bool c);
