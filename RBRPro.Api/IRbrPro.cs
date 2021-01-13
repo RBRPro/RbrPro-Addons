@@ -30,6 +30,7 @@ namespace RBRPro.Api
 
         Task StartGame(bool a, bool b, bool c);
         void Speak(string phrase);
+        Image GetCountryFlag(string country);
 
         event EventHandler<ICar> SelectedCarChanged;
         event EventHandler<IStage> SelectedStageChanged;
@@ -42,5 +43,6 @@ namespace RBRPro.Api
         event EventHandler GameStopped;
         event EventHandler GamePaused;
         event EventHandler<string> GameExited;
+        
     }
 }

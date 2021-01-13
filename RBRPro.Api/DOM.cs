@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Windows.Controls;
 
 /// <summary>
 /// RBRPro Domain Object Model
@@ -35,10 +36,11 @@ namespace RbrPro.API
 
         string AllowedCategories { get; }
         string AllowedCategories2 { get; }
+        string AvatarUrl { get;  }
 
         bool IsDonator { get; }
         bool IsProDonator { get; }
-        bool IsPatron { get; }
+        bool IsPatron { get; }        
 
         ITeam Team { get; }
     }
@@ -57,7 +59,8 @@ namespace RbrPro.API
         int Silvers { get; }
         int Bronzes { get; }
         int Reputation { get; }
-        
+        string AvatarUrl { get; }
+
         int NumMembers { get; }
         int NumEngineers { get; }
         int NumDrivers { get; }
@@ -202,6 +205,7 @@ namespace RbrPro.API
         string SoundsDirectory { get; }
         string ReleasedVersion { get; }       
         string TargetLanguage { get; }
+        string ImageLink { get; }
         string Author { get; }
         DateTime DateInstalled { get; }
         bool DonatorsOnly { get; }
