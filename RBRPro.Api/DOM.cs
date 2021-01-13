@@ -162,7 +162,7 @@ namespace RbrPro.API
         int LightsOption { get; }
         bool IsInList { get; }
         int Slot { get; }
-
+        
         void SelectSkin(string carSkin);
     }
 
